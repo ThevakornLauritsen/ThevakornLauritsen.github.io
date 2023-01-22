@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3632947771.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<img src="images/Logo.PNG" class="logo";>-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Game Developer & Web Developer</p>
+                <h1>Hi, I'm <span>Thevakorn</span><br>Lauritsen from Denmark</h1>
+            </div>
+        </div>
+    </div>
+<!-- About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="about-text">I’m a tech nerd and love to learn new things, whether it is simple or complex topics and concepts. 
+                        I’m passionate about working with people in general. Whether it is game development or web development. <br> I always try to make everything work together as a whole.
+                        I aspire to work in an environment where everyone has an equal opportunity to grow, learn and master things at the same time. 
+                        Oh and of course having fun :D <br>
+                        I am open to connections and conversations for new potential opportunities and networking.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Game Development</span><br>Game design - Level design - Narrative design - Unity - Unreal</li>
+                                <li><span>Web Development</span><br>Portfolios - Blogs - Ecommerce platforms - Front-end Development</li>
+                                <li><span>Project Management</span><br>Problem solving - Critical thinking - Agile methodologies</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Technical Support Specialist at Clerk.io</span><br>Oct 2022 - Current</li>
+                                <li><span>Hospital worker at Glostrup Hospital</span><br>Nov 2018 - Jun 2022</li>
+                                <li><span>Game and Level Designer at DADIU</span><br>Aug 2021 - Jan 2022</li>
+                                <li><span>Waiter at Promenaden</span><br>Jun 2010 - Jul 2013</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Master's degree of Medialogy at Aalborg University - Copenhagen</span><br>Sep 2020- Jun 2022</li>
+                                <li><span>Bachelor degree of Medialogy at Aalborg University - Copenhagen</span><br>Sep 2017- Jun 2020</li>
+                                <li><span>VUC Lyngby</span><br>Aug 2014 - Jun 2017</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Services-->
+    <div id="services">
+        <div class="container">
+            <div>
+                <h1 class="sub-title">Proficiencies</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-gamepad"></i>
+                        <h2>Game development</h2>
+                        <p>I love making solid game and level design, and narrative design for your game(s) both in Unity and Unreal.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web development</h2>
+                        <p>I primarily personal portfolio and blog website. Setting up and maintaining ecommerce shop. Primarily working in Front-end.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-diagram-project"></i>
+                        <h2>Project management</h2>
+                        <p>I provide a clear vision to make sure projects are finished. All through Agile methodologies.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Game Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/DADIU_2021_Team4_ToyGameARoyalMess_Poster_1.png">
+                <div class="layer">
+                    <h3>Toy Game - A Royal Mess</h3>
+                    <p>Final game project with DADIU. Sent 6 weeks developing this game with 15 other people. Play it now on itch.io</p>
+                    <a href="https://dadiu.itch.io/toy-game-a-royal-mess" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/requiem.PNG">
+                <div class="layer">
+                    <h3>Requim of Ragnarok</h3>
+                    <p>Master Thesis's Project where I investigate architectural design principles and how to use them for Level design.</p>
+                    <a href="https://drive.google.com/file/d/1GbdquMiI6zP8aIiecv367WNf-cLgrHzy/view" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="game-images/racoon.PNG">
+                <div class="layer">
+                    <h3>Friendly Neighborhood Racoon Game</h3>
+                    <p>Semester game project where we investigate event capsules along with adaptive narratives.</p>
+                    <a href="https://drive.google.com/file/d/1VC76uH1OTjA-5-UQYVf7AhPrKRBqlrXu/view?usp=share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!--<div class="work">
+                <img src="game-images/StartingPointView.jpg">
+                <div class="layer">
+                    <h3>Spooky ghost town</h3>
+                    <p>Semester game project where we investigate event capsules along with adaptive narratives.</p>
+                    <a href="https://drive.google.com/file/d/19VCRI7WjrQ7q-LoDDuYUInaU4bxSoC7z/view?usp=share_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="game-images/Level1.png">
+                <div class="layer">
+                    <h3>Little Mermaid - Serious Games</h3>
+                    <p>Bachelor project where we investigate reading engagement using a serious games as a medium.</p>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-63464-3_28"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>-->
+        </div>
+        <!--<a href="#" class="btn">See more</a>-->
+    </div>
+</div>
+
+<!-- Contact -->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+</body>
+</html>
