@@ -237,7 +237,7 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -410,12 +410,9 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
-    html{
-        max-width:80%;
-    }
-
     #header{
         background-image: url(images/Background-2.jpg);
+        width: 100vw;
     }
     .header-text{
         margin-left: 10%;
@@ -431,6 +428,7 @@ nav .fas{
     .fa-solid.fa-bars{
         display:block;
         flex-basis: content;
+        z-index: 1;
     }
 
     nav {
