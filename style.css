@@ -20,7 +20,7 @@ body{
     color: #ffffff;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow: scroll;
+    overflow: none;
 }
 
 body::-webkit-scrollbar {
@@ -28,7 +28,7 @@ body::-webkit-scrollbar {
 }
 
 #header{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url(images/Background-1.jpg);
     background-repeat: no-repeat;
@@ -467,6 +467,9 @@ nav .fas{
     .sub-title{
         font-size: 40px;
         margin-top: 20px;
+    }
+    .about-text{
+        width:100%;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
