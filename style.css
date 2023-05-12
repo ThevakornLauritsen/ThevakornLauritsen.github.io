@@ -7,7 +7,6 @@
 
 html {
     scroll-behavior: smooth;
-    max-width:100%;
 }
 
 body{
@@ -20,7 +19,7 @@ body{
     color: #ffffff;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow: none;
+    overflow-y: none;
 }
 
 body::-webkit-scrollbar {
@@ -411,6 +410,10 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
+    html{
+        max-width:80%;
+    }
+
     #header{
         background-image: url(images/Background-2.jpg);
     }
