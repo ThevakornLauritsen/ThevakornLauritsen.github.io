@@ -14,15 +14,15 @@
         <div class="container">
             <nav>
                 <!--<img src="images/Logo.PNG" class="logo";>-->
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 
             </nav>
             <div class="header-text">
@@ -169,18 +169,21 @@
                 <p><i class="fa-solid fa-phone" style="color: #005eff;"></i>+45 25542629</p>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/profile.php?id=1476502788" target="_blank"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
-                    <a href="https://twitter.com/thevakorn" target="_blank"><i class="fa-brands fa-square-twitter" style="color: #00acee;"></i></a>
+                    <a href="https://twitter.com/thevakorn" target="_blank"><i class="fa-brands fa-twitter" style="color: #00acee;"></i></a>
                     <a href="https://www.instagram.com/theo_lauritsen/" target="_blank"><i class="fa-brands fa-instagram" style="color: #EE18CB;"></i></a>
                     <a href="https://www.linkedin.com/in/thevakorn-lauritsen-73005113b/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i></a>
                 </div>
                 <a href="images/CV - English.pdf" download class="btn btn2" target="_blank">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form action="send_email.php">
+                    <label for="name">Name:</label>
                     <input type="text" name="Name" placeholder="Your Name" required>
+                    <label for="email">Email:</label>
                     <input type="email" name="email" placeholder="Your Email" required>
+                    <label for="email">Message:</label>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2" value="Submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -203,6 +206,16 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 </script>
 </body>
 </html>

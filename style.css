@@ -60,7 +60,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #4568dc;
+    background: #6E45DC;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -82,7 +82,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color:#4568dc;
+    color:#4d77ff;
 }
 
 /* about */
@@ -171,6 +171,10 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.fa-solid.fa-bars{
+    display:none;
+}
+
 /* Services */
 
 #services{
@@ -208,7 +212,7 @@ nav ul li a:hover::after{
 .services-list div a{
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 20px;
     display: inline-block;
 }
@@ -284,7 +288,7 @@ nav ul li a:hover::after{
 }
 
 .work:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .work:hover .layer{
@@ -412,23 +416,78 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
+
+    .fa-solid.fa-bars{
+        display:block;
+    }
+
+    nav {
+        font-size: 30px;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
     nav .fas{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background:#28376e;
+        background:#6E45DC;
         position: fixed;
         top:0;
-        right:0;
+        right: -200px;
         width:200px;
         height:100vh;
         padding-top: 50px;
-        border-style: solid;
-        border-color: #547cff;
+        z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display:block;
         margin:25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1 img{
+        width: 50%;
+    }
+    .about-col-2{
+        font-size: 15px;
+    }
+    .tab-links{
+        font-size: 18px;
+        margin-right: 40px;
+    }
+    .tab-contents ul li{
+        margin: 30px 20px 20px 0px;
+    }
+    .work:hover .layer{
+        width: 80%;
+    }
+    .work img{
+        width: 76%;
+    }
+    .layer{
+        width: 80%;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
     }
 }
