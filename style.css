@@ -19,7 +19,7 @@ body{
     color: #ffffff;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow-y: none;
+    overflow: scroll;
 }
 
 body::-webkit-scrollbar {
