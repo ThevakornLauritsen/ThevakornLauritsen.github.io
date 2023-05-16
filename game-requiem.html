@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/dc/Eo_circle_purple_letter-t.svg">
+    <script src="https://kit.fontawesome.com/3632947771.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header-1">
+        <div class="container">
+            <nav>
+                <!--<img src="images/Logo.PNG" class="logo";>-->
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#roleswitch">Role Switch</a></li>
+                    <!--<li><a href="#contact">Misc.</a></li>-->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text-1">
+                <h1></h1>
+                <p><span></span> <br></p>
+            </div>
+        </div>
+    </div>
+<!-- summary-->
+    <div id="summary">
+        <div class="container">
+            <div class="row-1">
+                <div class="about-col-1">
+                    <!--<img src="images/User.jpg">-->
+                </div>
+                <div class="about-col-3">
+                    <h1 class="sub-title">Summary</h1>
+                    <p class="about-text">Current side project which is developing into a potential start-up idea. <br> 
+                        Three of my friends and I started brainstorming this game back in Dec, 2022, and began pre-production in Jan, 2023 <br> 
+                        From there on it started escalating into production planning, estimated costs, and 
+                        how many people and years we would need to finish this game and start the company.
+                        <br>
+                        This portfolio will go through my thought processes from start to finish, how 
+                        far we have come and the current lessons from this project.</p>
+                </div>
+                    <div class="stockImage">
+                        <img src="images/pre-production-art.jpg">
+                    </div>
+                    <div class="pictureText">
+                        <p>Yes, this is stock image</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!--process-->
+    <div id="process">
+        <div class="container">
+            <div>
+                <h1 class="sub-title">Process</h1>
+                <p class="about-text">It first started out us laying out an pre-production planning. 
+                    This is where we want to evaluate what kind of game and genre we want to do. <br> 
+                    This was long process, as we had to consider the several stages for production 
+                    from demo, to recruitment, funding, and creating the company.</p>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-gamepad"></i>
+                        <h2>Lead Level Designer</h2>
+                        <p>Making greybox designs for the levels. Coordinate with artists and game designer/director on what to iterate.</p>
+                        <!--<a href="#">Learn more</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-book"></i>
+                        <h2>Lead Narrative Design</h2>
+                        <p>Primarily working on the story and how to translate it to various components of the game. 
+                            This can be setting, music, location and storyline.</p>
+                        <!--<a href="#">Learn more</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                        <h2>Game Producer</h2>
+                        <p>Administration work such as production planning, deadlines, pipeline refinement, 
+                            contracts and research for funding and investments.</p>
+                        <!--<a href="#">Learn more</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio-->
+<div id="roleswitch">
+    <div class="container">
+        <h1 class="sub-title">Role Switch</h1>
+        <div class="row-1">
+            <div class="about-col-1">
+            <!--<img src="images/User.jpg">-->
+            </div>
+            <div class="about-col-3">
+            <p class="about-text">Why I swapped from Lead Level designer to mainly doing Game producer
+                <br>
+                Doing many hat things do make my head hurt</p>
+            </div>
+            <div class="stockImage">
+                <img src="images/roleswapping.jpeg">
+            </div>
+            <div class="pictureText">
+                <p>Yes, this is stock image</p>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

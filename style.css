@@ -35,6 +35,15 @@ body::-webkit-scrollbar {
     background-position: center;
 }
 
+#header-1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/template.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container{
     padding: 10px 10%;
 }
@@ -79,7 +88,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 40%;
     font-size: 30px;
 }
 
@@ -99,9 +108,34 @@ nav ul li a:hover::after{
     color:#ffffff;
 }
 
+#summary{
+    padding: 50px 0;
+    color:#ffffff;
+}
+
+.stockImage{
+    display:flex;
+    justify-content: center;
+}
+
+.stockImage img{
+    width:50%;
+}
+
+.pictureText{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row-1{
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -116,6 +150,10 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 65%;
+}
+
+.about-col-3{
+    flex-basis: 100%;
 }
 
 .sub-title{
@@ -142,6 +180,7 @@ nav ul li a:hover::after{
 .about-text{
     font-size: 18px;
     padding: 20px 0px 20px 0px;
+    line-height: 1.4;
 }
 
 .tab-links::after{
@@ -186,12 +225,15 @@ nav ul li a:hover::after{
 
 #services{
     padding: 50px 0px;
+}
 
+#process{
+    padding: 50px 0px;
 }
 
 .services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -235,11 +277,19 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 
+#roleswitch{
+    padding: 50px 0;
+}
+
 .work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-gap: 40px;
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px 50px 50px;
+}
+
+.work-list div{
+    flex-basis: calc(50% - 10px);
+    margin:5px;
 }
 
 .work{
@@ -248,9 +298,9 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .work img{
-    height: 250px;
+    height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: scale-down;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -259,7 +309,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), rgb(63, 63, 63));
+    background: linear-gradient(rgba(0,0,0,0.9), rgb(63, 63, 63));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -290,16 +340,18 @@ nav ul li a:hover::after{
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 20px;
     text-align: center;
 }
 
 .work:hover img{
+    position: inherit;
     transform: scale(1.1);
 }
 
 .work:hover .layer{
     height: 100%;
+    width: 100%;
 }
 
 .btn{
@@ -413,6 +465,7 @@ nav .fas{
     #header{
         background-image: url(images/Background-2.jpg);
         width: 100vw;
+        height: auto;
     }
     .header-text{
         margin-left: 10%;
@@ -421,6 +474,13 @@ nav .fas{
         font-size: 20px;
     }
     
+    .services-list{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+
     .header-text h1{
         font-size: 30px;
     }
@@ -438,6 +498,7 @@ nav .fas{
         justify-content: flex-end;
         flex-wrap: wrap;
         margin-top: 20px;
+        margin: 30px;
     }
 
     nav .fas{
@@ -488,19 +549,37 @@ nav .fas{
     .tab-contents ul li{
         margin: 30px 20px 20px 0px;
     }
+
+    .work-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px 0px 0px 0px;
+    }
+    
+    .work-list div{
+        flex-basis: calc(100% - 10px);
+        margin:5px;
+    }
+
     .work:hover .layer{
-        width: 80%;
+        width: 100%;
+        height: 260px;
     }
     .work img{
-        width: 76%;
+        width: 100%;
+        height: 260px;
     }
     .layer{
-        width: 80%;
+        width: 100%;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
     .copyright{
         font-size: 14px;
+    }
+
+    .stockImage img{
+        width:100%;
     }
 }
