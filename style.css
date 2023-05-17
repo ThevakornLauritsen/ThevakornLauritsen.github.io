@@ -498,7 +498,7 @@ nav .fas{
         justify-content: flex-end;
         flex-wrap: wrap;
         margin-top: 20px;
-        margin: 30px;
+        margin: 20px;
     }
 
     nav .fas{
@@ -531,7 +531,7 @@ nav .fas{
         margin-top: 20px;
     }
     .about-text{
-        width:100%;
+        width:90%;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
